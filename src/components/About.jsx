@@ -12,7 +12,7 @@ const About = () => {
                     <div>
                         <p className="text-gray-400 mb-6">
                             Soy un desarrollador autodidacta apasionado por construir aplicaciones web funcionales y elegantes. 
-                            Comencé mi viaje en 2023 aprendiendo HTML y CSS, y hoy me enfoco en tecnologías como React y Firebase.
+                            Comencé mi viaje en 2024 aprendiendo HTML y CSS, y hoy me enfoco en tecnologías como React y Firebase.
                         </p>
                         <p className="text-gray-400">
                             Cuando no estoy codificando, me gusta documentar mi aprendizaje en blogs técnicos y explorar nuevas herramientas.
