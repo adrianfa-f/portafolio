@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Añade Navigate
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -11,22 +11,24 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <Router>
-        <Navigation />
-        <ScrollToTop />
-        <Routes>
+      <Navigation />
+      <ScrollToTop />
+      <Routes>
         <Route 
-            path="/" 
-            element={
-              <>
-                <Hero />
-                <Projects />
-                <About />
-                <Contact />
-                <Footer />
-              </>
-            } 
-          />
-        </Routes>
+          path="/" 
+          element={
+            <>
+              <Hero />
+              <Projects />
+              <About />
+              <Contact />
+              <Footer />
+            </>
+          } 
+        />
+        {/* Añade esta ruta al final para manejar 404 */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </Router>
   );
 }
