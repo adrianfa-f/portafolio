@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Añade Navigate
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
@@ -26,7 +26,6 @@ function App() {
             </>
           } 
         />
-        {/* Añade esta ruta al final para manejar 404 */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
