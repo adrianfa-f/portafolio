@@ -16,6 +16,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mejorar visibilidad de controles */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.5rem !important;
+  color: #22d3ee;
+}
+
+/* Ajustar posición de paginación */
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+/* Efecto hover en imágenes */
+.swiper-slide img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.02);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
